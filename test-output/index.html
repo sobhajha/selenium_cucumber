@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Tests" class="navigator-link">
+              <span class="suite-name border-passed">Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Tests" class="navigator-link ">
+                    <span>seleniumDemoTestng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Tests" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods passed suite-Tests"> (hide)</a> <!-- hide-methods passed suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods passed suite-Tests"> (show)</a> <!-- show-methods passed suite-Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.DragAndDropDemoTest" class="method navigator-link" hash-for-method="dragDropTest(Draggable 1,Draggable 3)">dragDropTest(Draggable 1,Draggable 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.SelectDemoTest" class="method navigator-link" hash-for-method="multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio)">multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.SelectDemoTest" class="method navigator-link" hash-for-method="selectDayByIndex(4)">selectDayByIndex(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.SelectDemoTest" class="method navigator-link" hash-for-method="selectDayByValue(Monday)">selectDayByValue(Monday)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.SimpleInputDemoTest" class="method navigator-link" hash-for-method="seleniumEnterInputTest(mymessage1)">seleniumEnterInputTest(mymessage1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.selenium.smartwyre.test.SimpleInputDemoTest" class="method navigator-link" hash-for-method="seleniumSumDemoTest(3, 4, 7)">seleniumSumDemoTest(3, 4, 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tests" class="panel Tests">
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.smartwyre.test.SelectDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio)">
+                  </a> <!-- multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio) -->
+                  <span class="method-name">multipleSelectCounrtiesDemo</span>
+                  <span class="parameters">(California,Ohio,Pennsylvania,Ohio)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectDayByIndex(4)">
+                  </a> <!-- selectDayByIndex(4) -->
+                  <span class="method-name">selectDayByIndex</span>
+                  <span class="parameters">(4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectDayByValue(Monday)">
+                  </a> <!-- selectDayByValue(Monday) -->
+                  <span class="method-name">selectDayByValue</span>
+                  <span class="parameters">(Monday)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.smartwyre.test.SimpleInputDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="seleniumEnterInputTest(mymessage1)">
+                  </a> <!-- seleniumEnterInputTest(mymessage1) -->
+                  <span class="method-name">seleniumEnterInputTest</span>
+                  <span class="parameters">(mymessage1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="seleniumSumDemoTest(3, 4, 7)">
+                  </a> <!-- seleniumSumDemoTest(3, 4, 7) -->
+                  <span class="method-name">seleniumSumDemoTest</span>
+                  <span class="parameters">(3, 4, 7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.smartwyre.test.DragAndDropDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragDropTest(Draggable 1,Draggable 3)">
+                  </a> <!-- dragDropTest(Draggable 1,Draggable 3) -->
+                  <span class="method-name">dragDropTest</span>
+                  <span class="parameters">(Draggable 1,Draggable 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+        </div> <!-- panel Tests -->
+        <div panel-name="test-xml-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/sobhajha/eclipse-workspace/selenium_web_smartWyre/resources/testng/seleniumDemoTestng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Tests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot;&gt;
+  &lt;parameter name=&quot;screenshotStoreFolder&quot; value=&quot;screenshots&quot;/&gt;
+  &lt;parameter name=&quot;pdfngreport-properties&quot; value=&quot;/Users/sobhajha/eclipse-workspace/selenium_web_smartWyre/resources/pdfngreport.properties&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;demotestTime&quot; verbose=&quot;3&quot;&gt;
+    &lt;parameter name=&quot;screenshotStoreFolder&quot; value=&quot;screenshots&quot;/&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;MAC&quot;/&gt;
+    &lt;parameter name=&quot;driverPath&quot; value=&quot;drivers/ChromeDriver/chromedriver&quot;/&gt;
+    &lt;parameter name=&quot;testTarget&quot; value=&quot;https://www.seleniumeasy.com/test/basic-first-form-demo.html&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.smartwyre.test.SimpleInputDemoTest&quot;&gt;
+        &lt;parameter name=&quot;sum1&quot; value=&quot;3&quot;/&gt;
+        &lt;parameter name=&quot;actualSum&quot; value=&quot;7&quot;/&gt;
+        &lt;parameter name=&quot;sum2&quot; value=&quot;4&quot;/&gt;
+        &lt;parameter name=&quot;text&quot; value=&quot;mymessage1&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.smartwyre.test.SimpleInputDemoTest --&gt;
+      &lt;class name=&quot;com.selenium.smartwyre.test.SelectDemoTest&quot;&gt;
+        &lt;parameter name=&quot;actualSum&quot; value=&quot;7&quot;/&gt;
+        &lt;parameter name=&quot;dayIndex&quot; value=&quot;4&quot;/&gt;
+        &lt;parameter name=&quot;countries&quot; value=&quot;California,Ohio,Pennsylvania,Ohio&quot;/&gt;
+        &lt;parameter name=&quot;day&quot; value=&quot;Monday&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.smartwyre.test.SelectDemoTest --&gt;
+      &lt;class name=&quot;com.selenium.smartwyre.test.DragAndDropDemoTest&quot;&gt;
+        &lt;parameter name=&quot;draggableElement&quot; value=&quot;Draggable 1,Draggable 3&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.smartwyre.test.DragAndDropDemoTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- demotestTime --&gt;
+&lt;/suite&gt; &lt;!-- Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">demotestTime (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tests');
+function tableData_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dragDropTest')
+data.setCell(0, 2, 'com.selenium.smartwyre.test.DragAndDropDemoTest')
+data.setCell(0, 3, 24333);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'seleniumEnterInputTest')
+data.setCell(1, 2, 'com.selenium.smartwyre.test.SimpleInputDemoTest')
+data.setCell(1, 3, 13949);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'selectDayByValue')
+data.setCell(2, 2, 'com.selenium.smartwyre.test.SelectDemoTest')
+data.setCell(2, 3, 11291);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'seleniumSumDemoTest')
+data.setCell(3, 2, 'com.selenium.smartwyre.test.SimpleInputDemoTest')
+data.setCell(3, 3, 4882);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'multipleSelectCounrtiesDemo')
+data.setCell(4, 2, 'com.selenium.smartwyre.test.SelectDemoTest')
+data.setCell(4, 3, 691);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'selectDayByIndex')
+data.setCell(5, 2, 'com.selenium.smartwyre.test.SelectDemoTest')
+data.setCell(5, 3, 498);
+window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <div id="times-div-Tests">
+              </div> <!-- times-div-Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">seleniumEnterInputTest(mymessage1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:02:56:418] [00:00:09:353]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:02:56:419] [449842:02:56:419]:STEP_DOC [11:02:56:418] [00:00:09:353]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:02:59:673] [00:00:12:607]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:02:59:673] [449842:02:59:674]:STEP_DOC [11:02:59:673] [00:00:12:607]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:02:397] [00:00:15:331]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:02:397] [449842:03:02:397]:STEP_DOC [11:03:02:397] [00:00:15:331]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:03:510] [00:00:16:444]:Done waiting for 1000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:03:510] [449842:03:03:510]:STEP_DOC [11:03:03:510] [00:00:16:444]:Done waiting for 1000 ms.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:04:07:442] [00:00:32:207]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:442] [449842:04:07:442]:STEP_DOC [11:04:07:442] [00:00:32:207]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:452] [00:00:32:217]:WebElement initiated. xpath=id("multi-select")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:452] [449842:04:07:452]:STEP_DOC [11:04:07:452] [00:00:32:217]:WebElement initiated. xpath=id("multi-select")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:542] [00:00:32:307]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:542] [449842:04:07:542]:STEP_DOC [11:04:07:542] [00:00:32:307]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:553] [00:00:32:318]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:553] [449842:04:07:553]:STEP_DOC [11:04:07:553] [00:00:32:318]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:641] [00:00:32:406]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:641] [449842:04:07:641]:STEP_DOC [11:04:07:641] [00:00:32:406]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:650] [00:00:32:415]:WebElement initiated. xpath=id("multi-select")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:650] [449842:04:07:650]:STEP_DOC [11:04:07:650] [00:00:32:415]:WebElement initiated. xpath=id("multi-select")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:725] [00:00:32:490]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:725] [449842:04:07:725]:STEP_DOC [11:04:07:725] [00:00:32:490]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:732] [00:00:32:497]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:732] [449842:04:07:732]:STEP_DOC [11:04:07:732] [00:00:32:497]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:766] [00:00:32:531]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:766] [449842:04:07:766]:STEP_DOC [11:04:07:766] [00:00:32:531]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:772] [00:00:32:537]:WebElement initiated. xpath=id("multi-select")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:772] [449842:04:07:773]:STEP_DOC [11:04:07:772] [00:00:32:537]:WebElement initiated. xpath=id("multi-select")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:780] [00:00:32:545]:WebElement initiated. xpath=id("multi-select")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:781] [449842:04:07:781]:STEP_DOC [11:04:07:780] [00:00:32:545]:WebElement initiated. xpath=id("multi-select")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:789] [00:00:32:554]:WebElement initiated. xpath=id("multi-select")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:789] [449842:04:07:789]:STEP_DOC [11:04:07:789] [00:00:32:554]:WebElement initiated. xpath=id("multi-select")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:797] [00:00:32:562]:WebElement initiated. xpath=id("multi-select")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:797] [449842:04:07:797]:STEP_DOC [11:04:07:797] [00:00:32:562]:WebElement initiated. xpath=id("multi-select")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:804] [00:00:32:569]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:804] [449842:04:07:804]:STEP_DOC [11:04:07:804] [00:00:32:569]:WebElement initiated. xpath=id("multi-select")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:817] [00:00:32:582]:WebElement initiated. xpath=id("multi-select")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:817] [449842:04:07:817]:STEP_DOC [11:04:07:817] [00:00:32:582]:WebElement initiated. xpath=id("multi-select")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:825] [00:00:32:590]:WebElement initiated. xpath=id("multi-select")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:825] [449842:04:07:826]:STEP_DOC [11:04:07:825] [00:00:32:590]:WebElement initiated. xpath=id("multi-select")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:834] [00:00:32:599]:WebElement initiated. xpath=id("multi-select")/OPTION[8]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:07:834] [449842:04:07:834]:STEP_DOC [11:04:07:834] [00:00:32:599]:WebElement initiated. xpath=id("multi-select")/OPTION[8]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">selectDayByIndex(4)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:04:08:119] [00:00:32:884]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:119] [449842:04:08:119]:STEP_DOC [11:04:08:119] [00:00:32:884]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:128] [00:00:32:893]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:128] [449842:04:08:128]:STEP_DOC [11:04:08:128] [00:00:32:893]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:136] [00:00:32:901]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:136] [449842:04:08:136]:STEP_DOC [11:04:08:136] [00:00:32:901]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:145] [00:00:32:910]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:145] [449842:04:08:145]:STEP_DOC [11:04:08:145] [00:00:32:910]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:154] [00:00:32:919]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:154] [449842:04:08:154]:STEP_DOC [11:04:08:154] [00:00:32:919]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:162] [00:00:32:927]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:162] [449842:04:08:162]:STEP_DOC [11:04:08:162] [00:00:32:927]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:172] [00:00:32:937]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:172] [449842:04:08:172]:STEP_DOC [11:04:08:172] [00:00:32:937]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:180] [00:00:32:945]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:180] [449842:04:08:181]:STEP_DOC [11:04:08:180] [00:00:32:945]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:189] [00:00:32:954]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:190] [449842:04:08:190]:STEP_DOC [11:04:08:189] [00:00:32:954]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:353] [00:00:33:118]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:353] [449842:04:08:353]:STEP_DOC [11:04:08:353] [00:00:33:118]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:362] [00:00:33:127]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:362] [449842:04:08:362]:STEP_DOC [11:04:08:362] [00:00:33:127]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:372] [00:00:33:137]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:372] [449842:04:08:372]:STEP_DOC [11:04:08:372] [00:00:33:137]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:379] [00:00:33:144]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:379] [449842:04:08:379]:STEP_DOC [11:04:08:379] [00:00:33:144]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:387] [00:00:33:152]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:387] [449842:04:08:387]:STEP_DOC [11:04:08:387] [00:00:33:152]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:393] [00:00:33:158]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:393] [449842:04:08:393]:STEP_DOC [11:04:08:393] [00:00:33:158]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:401] [00:00:33:166]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:401] [449842:04:08:401]:STEP_DOC [11:04:08:401] [00:00:33:166]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:409] [00:00:33:174]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:409] [449842:04:08:409]:STEP_DOC [11:04:08:409] [00:00:33:174]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:419] [00:00:33:184]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:08:419] [449842:04:08:419]:STEP_DOC [11:04:08:419] [00:00:33:184]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dragDropTest(Draggable 1,Draggable 3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:03:44:054] [00:00:08:819]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:44:054] [449842:03:44:054]:STEP_DOC [11:03:44:054] [00:00:08:819]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:47:311] [00:00:12:076]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:47:311] [449842:03:47:311]:STEP_DOC [11:03:47:311] [00:00:12:076]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:49:654] [00:00:14:419]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:49:654] [449842:03:49:655]:STEP_DOC [11:03:49:654] [00:00:14:419]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:56:449] [00:00:21:214]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:56:449] [449842:03:56:449]:STEP_DOC [11:03:56:449] [00:00:21:214]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:03:151] [00:00:27:916]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:04:03:151] [449842:04:03:151]:STEP_DOC [11:04:03:151] [00:00:27:916]:Done waiting for 3000 ms.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">seleniumSumDemoTest(3, 4, 7)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:03:07:335] [00:00:20:269]:Done waiting for 1000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:07:335] [449842:03:07:336]:STEP_DOC [11:03:07:335] [00:00:20:269]:Done waiting for 1000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:09:698] [00:00:22:633]:Done waiting for 1000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:09:699] [449842:03:09:699]:STEP_DOC [11:03:09:698] [00:00:22:633]:Done waiting for 1000 ms.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">selectDayByValue(Monday)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP_DOC [11:03:26:121] [00:00:09:088]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:26:121] [449842:03:26:121]:STEP_DOC [11:03:26:121] [00:00:09:088]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:29:336] [00:00:12:304]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:29:337] [449842:03:29:337]:STEP_DOC [11:03:29:336] [00:00:12:304]:Done waiting for 3000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:563] [00:00:15:530]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:563] [449842:03:32:563]:STEP_DOC [11:03:32:563] [00:00:15:530]:Done waiting for 2000 ms.</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:672] [00:00:15:639]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:672] [449842:03:32:672]:STEP_DOC [11:03:32:672] [00:00:15:639]:Found [1] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:684] [00:00:15:651]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:684] [449842:03:32:684]:STEP_DOC [11:03:32:684] [00:00:15:651]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:772] [00:00:15:739]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:772] [449842:03:32:772]:STEP_DOC [11:03:32:772] [00:00:15:739]:Found [8] elements</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:785] [00:00:15:753]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:786] [449842:03:32:786]:STEP_DOC [11:03:32:785] [00:00:15:753]:WebElement initiated. xpath=id("select-demo")/OPTION[1]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:800] [00:00:15:767]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:800] [449842:03:32:800]:STEP_DOC [11:03:32:800] [00:00:15:767]:WebElement initiated. xpath=id("select-demo")/OPTION[2]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:809] [00:00:15:776]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:810] [449842:03:32:810]:STEP_DOC [11:03:32:809] [00:00:15:776]:WebElement initiated. xpath=id("select-demo")/OPTION[3]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:819] [00:00:15:786]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:819] [449842:03:32:819]:STEP_DOC [11:03:32:819] [00:00:15:786]:WebElement initiated. xpath=id("select-demo")/OPTION[4]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:829] [00:00:15:796]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:829] [449842:03:32:829]:STEP_DOC [11:03:32:829] [00:00:15:796]:WebElement initiated. xpath=id("select-demo")/OPTION[5]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:840] [00:00:15:807]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:840] [449842:03:32:840]:STEP_DOC [11:03:32:840] [00:00:15:807]:WebElement initiated. xpath=id("select-demo")/OPTION[6]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:852] [00:00:15:819]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:852] [449842:03:32:852]:STEP_DOC [11:03:32:852] [00:00:15:819]:WebElement initiated. xpath=id("select-demo")/OPTION[7]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:862] [00:00:15:829]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+                <span class="reporter-method-output">STEP_DOC [11:03:32:862] [449842:03:32:862]:STEP_DOC [11:03:32:862] [00:00:15:829]:WebElement initiated. xpath=id("select-demo")/OPTION[8]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.smartwyre.test.SimpleInputDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startSession(, , 4444, drivers/ChromeDriver/chromedriver, null, MAC, chrome, https://www.seleniumeasy.com/test/ba...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.SimpleInputDemoTest.seleniumEnterInputTest(java...)</span>
+                <span class="method-start">9601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">seleniumEnterInputTest(mymessage1)</span>
+                <span class="method-start">9687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.SimpleInputDemoTest.seleniumEnterInputTest(java.lang.String)...)</span>
+                <span class="method-start">23640 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.SimpleInputDemoTest.seleniumSumDemoTest(int,int...)</span>
+                <span class="method-start">23642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">seleniumSumDemoTest(3, 4, 7)</span>
+                <span class="method-start">23643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.SimpleInputDemoTest.seleniumSumDemoTest(int,int,int) throws ...)</span>
+                <span class="method-start">28528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">28529 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.smartwyre.test.SelectDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startSession(, , 4444, drivers/ChromeDriver/chromedriver, null, MAC, chrome, https://www.seleniumeasy.com/test/ba...)</span>
+                <span class="method-start">31793 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.SelectDemoTest.selectDayByValue(java.lang.Strin...)</span>
+                <span class="method-start">39075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectDayByValue(Monday)</span>
+                <span class="method-start">39077 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.SelectDemoTest.selectDayByValue(java.lang.String) throws jav...)</span>
+                <span class="method-start">50370 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.smartwyre.test.DragAndDropDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startSession(, , 4444, drivers/ChromeDriver/chromedriver, null, MAC, chrome, https://www.seleniumeasy.com/test/ba...)</span>
+                <span class="method-start">50371 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.DragAndDropDemoTest.dragDropTest(java.lang.Stri...)</span>
+                <span class="method-start">57191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dragDropTest(Draggable 1,Draggable 3)</span>
+                <span class="method-start">57193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.DragAndDropDemoTest.dragDropTest(java.lang.String) throws ja...)</span>
+                <span class="method-start">81528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">81530 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.smartwyre.test.SelectDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.SelectDemoTest.multipleSelectCounrtiesDemo(java...)</span>
+                <span class="method-start">84763 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">multipleSelectCounrtiesDemo(California,Ohio,Pennsylvania,Ohio)</span>
+                <span class="method-start">84764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.SelectDemoTest.multipleSelectCounrtiesDemo(java.lang.String)...)</span>
+                <span class="method-start">85456 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initSingleTest(screenshots, public void com.selenium.smartwyre.test.SelectDemoTest.selectDayByIndex(java.lang.Strin...)</span>
+                <span class="method-start">85457 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectDayByIndex(4)</span>
+                <span class="method-start">85458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finalizeTest(public void com.selenium.smartwyre.test.SelectDemoTest.selectDayByIndex(java.lang.String) throws jav...)</span>
+                <span class="method-start">85957 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">85958 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

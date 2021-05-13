@@ -1,0 +1,208 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-26T09:58:58.437Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13253000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.selenium.smartwyre.hooks.TestHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 17161868000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.selenium.smartwyre.hooks.TestHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User is on selenium demo page",
+        "description": "",
+        "id": "input-form;user-is-on-selenium-demo-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13256566000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User in on selenium easy demo page",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_in_on_selenium_easy_demo_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13162778000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User expands input form menu",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_expands_input_form_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2596936000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on simple form demo",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.click_on_simple_form_demo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28021000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user should on simple form demo page",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_should_on_simple_form_demo_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T09:59:44.856Z",
+        "before": [
+          {
+            "result": {
+              "duration": 963000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.selenium.smartwyre.hooks.TestHooks.getProperty()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Two Input Fields",
+        "description": "",
+        "id": "input-form;two-input-fields;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3279817000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.selenium.smartwyre.hooks.TestHooks.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 445000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.selenium.smartwyre.hooks.TestHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16495000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User is on simple input form page",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_is_on_simple_input_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4603472000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User enters 4 in input field a and 8 in input field b",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                },
+                {
+                  "val": "8",
+                  "offset": 35
+                }
+              ],
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_enters_in_input_field_a_and_in_input_field_b(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48610000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "clicks on Get Total  button",
+            "match": {
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.clicks_on_get_total_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59653000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user must get 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 14
+                }
+              ],
+              "location": "com.selenium.smartwyre.stepDefinitions.SimpleInputDemoSteps.user_must_get(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Last"
+          }
+        ]
+      }
+    ],
+    "name": "Input Form",
+    "description": "",
+    "id": "input-form",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/selenium/smartwyre/features/simpleInputForm.feature",
+    "tags": []
+  }
+]

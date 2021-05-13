@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Tests]" guice-stage="DEVELOPMENT" verbose="3">
+  <parameter name="screenshotStoreFolder" value="screenshots"/>
+  <parameter name="pdfngreport-properties" value="/Users/sobhajha/eclipse-workspace/selenium_web_smartWyre/resources/pdfngreport.properties"/>
+  <test thread-count="5" parallel="tests" name="demotestTime(failed)" verbose="3">
+    <parameter name="screenshotStoreFolder" value="screenshots"/>
+    <parameter name="os" value="MAC"/>
+    <parameter name="driverPath" value="drivers/ChromeDriver/chromedriver"/>
+    <parameter name="testTarget" value="https://www.seleniumeasy.com/test/basic-first-form-demo.html"/>
+    <parameter name="platform" value="chrome"/>
+    <classes>
+      <class name="com.selenium.smartwyre.test.DragAndDropDemoTest">
+        <parameter name="sum1" value="3"/>
+        <parameter name="sum2" value="4"/>
+        <parameter name="dayIndex" value="4"/>
+        <parameter name="actualSum" value="7"/>
+        <parameter name="text" value="mymessage1"/>
+        <parameter name="countries" value="California,Ohio,Pennsylvania,Ohio"/>
+        <parameter name="day" value="Monday"/>
+        <parameter name="draggableElement" value="Draggable 1,Draggable 3"/>
+        <methods>
+          <include name="dragDropTest"/>
+          <include name="finalizeTest"/>
+          <include name="initSingleTest"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+        </methods>
+      </class> <!-- com.selenium.smartwyre.test.DragAndDropDemoTest -->
+    </classes>
+  </test> <!-- demotestTime(failed) -->
+</suite> <!-- Failed suite [Tests] -->

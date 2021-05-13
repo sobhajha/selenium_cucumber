@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="3" parallel="tests">
+	<parameter name="screenshotStoreFolder" value="screenshots" />
+	<test name="demotestTime">
+		<parameter name="os" value="MAC" />
+	    <parameter name="platform" value="chrome" /> 
+	    <parameter name="driverPath"
+		value="drivers/ChromeDriver/chromedriver" />
+		<parameter name="testTarget" value="https://rushden-portal-old-wms.postgbr.com/desktop/homepage.php" />
+		 <parameter name="userName" value="java" /> 
+		 <parameter name="password" value="test" /> 
+		 	<parameter name="screenshotStoreFolder" value="screenshots" />
+		 
+		
+		<classes>
+		<class name="com.selenium.smartwyre.testRunner.TestRunner" />
+ 	</classes>
+	</test>
+</suite>

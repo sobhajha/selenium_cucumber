@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="3" parallel="tests">
+	<parameter name="screenshotStoreFolder" value="screenshots" />
+	
+	
+	<parameter name="pdfngreport-properties" value="/Users/sobhajha/eclipse-workspace/selenium_web_smartWyre/resources/pdfngreport.properties" />
+  
+ 	<test name="demotestTime">
+	
+	
+	
+		<parameter name="os" value="MAC" />
+	    <parameter name="platform" value="chrome" /> 
+	    <parameter name="driverPath"
+		value="drivers/ChromeDriver/chromedriver" />
+		<parameter name="testTarget" value="https://www.seleniumeasy.com/test/basic-first-form-demo.html" />
+	
+		 	<parameter name="screenshotStoreFolder" value="screenshots" />
+		 
+		
+		<classes>
+		  <class name="com.selenium.smartwyre.test.SimpleInputDemoTest" >
+		 <parameter name="sum1" value="3" /> 
+		 <parameter name="sum2" value="4" /> 
+		<parameter name="text" value="mymessage1" /> 
+	    <parameter name="actualSum" value="7" />  		  		 
+		 </class>
+		 <class name="com.selenium.smartwyre.test.SelectDemoTest" >
+		 <parameter name="day" value="Monday" /> 
+		 <parameter name="dayIndex" value="4" /> 
+		<parameter name="countries" value="California,Ohio,Pennsylvania,Ohio" /> 
+	    <parameter name="actualSum" value="7" />  		  		 
+		 </class> 
+		<class name="com.selenium.smartwyre.test.DragAndDropDemoTest" >
+		<parameter name="draggableElement" value="Draggable 1,Draggable 3" /> 
+		 </class>
+		</classes>
+	</test>
+</suite>
